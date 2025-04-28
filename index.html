@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Explanation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Project Overview</h1>
+            <p class="subtitle">Team 2 Project Documentation</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="project-overview">
+            <h2>Project Description</h2>
+            <div class="centered-description">
+                <p>This project focuses on developing an intelligent cleaning robot equipped with sensors and a gripper for autonomous operation in indoor environments. The robot uses ultrasonic and IR sensors for obstacle detection and navigation, along with a servo-based gripper to pick up debris. Advanced path-planning algorithms ensure efficient cleaning, while machine learning enables adaptation to different spaces.</p>
+                <p>Designed for homes, offices, and commercial settings, it reduces manual effort and enhances cleanliness. The system includes a user-friendly interface for control and monitoring. By integrating AI and automation, this robot offers a smart, efficient, and scalable cleaning solution, revolutionizing traditional cleaning methods.</p>
+            </div>
+        </section>
+
+        <section class="project-images">
+            <h2>Project Images</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide active">
+                        <img src="images/Screenshot 2024-05-17 125148.png" alt="Project Screenshot 1">
+                        <div class="caption">Project Screenshot 1</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/Screenshot 2024-05-17 102537.png" alt="Project Screenshot 2">
+                        <div class="caption">Project Screenshot 2</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/WhatsApp Image 2025-04-26 at 2.29.02 PM.jpeg" alt="Project Implementation">
+                        <div class="caption">Project Implementation</div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/WhatsApp Image 2025-04-26 at 2.29.03 PM.jpeg" alt="Project Details">
+                        <div class="caption">Project Details</div>
+                    </div>
+                </div>
+                <button class="carousel-button prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-button next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="components">
+            <h2>Robot Components</h2>
+            <div class="components-wrapper" style="position: relative;">
+                <button class="scroll-button prev" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); z-index: 2; background: rgba(52, 152, 219, 0.9); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="component-container">
+                    <div class="component-item">
+                        <div class="component-image">
+                            <img src="components/ArduinoUNOR3.webp" alt="Arduino UNO R3">
+                        </div>
+                        <div class="component-details">
+                            <h3>Arduino UNO R3 - Main Controller</h3>
+                            <p>The brain of our cleaning robot, responsible for:</p>
+                            <ul>
+                                <li>Processing sensor data for navigation</li>
+                                <li>Controlling motors and servos</li>
+                                <li>Executing cleaning algorithms</li>
+                                <li>Managing robot's behavior and responses</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="component-item">
+                        <div class="component-image">
+                            <img src="components/Arduino---Ultrasonic-Sensor-2.webp" alt="Ultrasonic Sensor">
+                        </div>
+                        <div class="component-details">
+                            <h3>Ultrasonic Sensor</h3>
+                            <p>Essential for obstacle detection and navigation:</p>
+                            <ul>
+                                <li>Measures distances up to 400cm</li>
+                                <li>Detects obstacles in real-time</li>
+                                <li>Helps in path planning</li>
+                                <li>Ensures collision-free movement</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="component-item">
+                        <div class="component-image">
+                            <img src="components/ir sensor.webp" alt="IR Sensor">
+                        </div>
+                        <div class="component-details">
+                            <h3>IR Sensor</h3>
+                            <p>Provides precise edge detection and line following:</p>
+                            <ul>
+                                <li>Detects surface edges and drops</li>
+                                <li>Helps in boundary detection</li>
+                                <li>Enables systematic cleaning patterns</li>
+                                <li>Works in various lighting conditions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="component-item">
+                        <div class="component-image">
+                            <img src="components/MG995MetalGearServoMotor.webp" alt="MG995 Servo Motor">
+                        </div>
+                        <div class="component-details">
+                            <h3>MG995 Metal Gear Servo Motor</h3>
+                            <p>Powers the gripper mechanism:</p>
+                            <ul>
+                                <li>High torque for reliable gripping</li>
+                                <li>Precise position control</li>
+                                <li>Durable metal gears</li>
+                                <li>Smooth operation for debris collection</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="component-item">
+                        <div class="component-image">
+                            <img src="components/motor-driver-shield.webp" alt="Motor Driver Shield">
+                        </div>
+                        <div class="component-details">
+                            <h3>Motor Driver Shield</h3>
+                            <p>Controls the robot's movement system:</p>
+                            <ul>
+                                <li>Manages multiple DC motors</li>
+                                <li>Provides variable speed control</li>
+                                <li>Supports different movement patterns</li>
+                                <li>Ensures efficient power distribution</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-button next" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); z-index: 2; background: rgba(52, 152, 219, 0.9); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Terrain Adaptability</h3>
+                    <p>Specially designed for smooth movement on sandy surfaces using large wheels, ensuring efficient operation in beach environments.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <h3>Waste Collection System</h3>
+                    <p>Features an integrated container at the back of the robot, working in conjunction with the hand gripper to efficiently collect and store waste materials.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Autonomous Operation</h3>
+                    <p>Reduces manual labor through autonomous operation, utilizing advanced object detection sensors, infrared, and ultrasonic sensors for intelligent navigation and cleaning.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-rock"></i>
+                    </div>
+                    <h3>Precision Gripper</h3>
+                    <p>Specialized gripper mechanism designed to handle lightweight waste materials (12-15 grams) including cans, plastic, and paper with precision and reliability.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="team">
+            <h2>Our Team</h2>
+            <div class="team-container" style="position: relative;">
+                <button class="scroll-button prev" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); z-index: 2; background: rgba(52, 152, 219, 0.9); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Arun Kumar.B</h3>
+                        <p class="member-role">Team Lead</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/arun-kumar-b-2604ba248/" target="_blank" class="linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Harshini K</h3>
+                        <p class="member-role">Hardware Design</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/harshini-k-2b934b24a/" target="_blank" class="linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Abinaya M</h3>
+                        <p class="member-role">Software Developer</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/abinaya-m-77ab77256/" target="_blank" class="linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Aishwarya</h3>
+                        <p class="member-role">Circuit Design</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/" target="_blank" class="linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <div class="member-photo">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <h3>Stephen.i</h3>
+                        <p class="member-role">Testing Engineer</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/stephantech/" target="_blank" class="linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="scroll-button next" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); z-index: 2; background: rgba(52, 152, 219, 0.9); color: white; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Team 2. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Function to initialize a carousel
+            function initCarousel(carouselContainer) {
+                const slides = carouselContainer.querySelectorAll('.carousel-slide');
+                const prevButton = carouselContainer.querySelector('.carousel-button.prev');
+                const nextButton = carouselContainer.querySelector('.carousel-button.next');
+                let currentSlide = 0;
+
+                function updateSlides() {
+                    slides.forEach(slide => slide.classList.remove('active'));
+                    slides[currentSlide].classList.add('active');
+                }
+
+                function nextSlide() {
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    updateSlides();
+                }
+
+                function prevSlide() {
+                    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                    updateSlides();
+                }
+
+                nextButton.addEventListener('click', nextSlide);
+                prevButton.addEventListener('click', prevSlide);
+
+                // Auto-advance slides every 5 seconds
+                setInterval(nextSlide, 5000);
+            }
+
+            // Initialize all carousels
+            document.querySelectorAll('.carousel-container').forEach(initCarousel);
+
+            // Function to initialize scroll buttons for a container
+            function initScrollButtons(container, prevButton, nextButton, scrollAmount) {
+                if (container && prevButton && nextButton) {
+                    prevButton.addEventListener('click', () => {
+                        container.scrollBy({
+                            left: -scrollAmount,
+                            behavior: 'smooth'
+                        });
+                    });
+
+                    nextButton.addEventListener('click', () => {
+                        container.scrollBy({
+                            left: scrollAmount,
+                            behavior: 'smooth'
+                        });
+                    });
+
+                    function updateScrollButtons() {
+                        prevButton.style.display = container.scrollLeft > 0 ? 'flex' : 'none';
+                        nextButton.style.display = 
+                            container.scrollLeft < (container.scrollWidth - container.clientWidth) ? 'flex' : 'none';
+                    }
+
+                    container.addEventListener('scroll', updateScrollButtons);
+                    window.addEventListener('resize', updateScrollButtons);
+                    updateScrollButtons(); // Initial check
+                }
+            }
+
+            // Initialize components scroll
+            const componentsContainer = document.querySelector('.component-container');
+            const prevComponentButton = document.querySelector('.components-wrapper .scroll-button.prev');
+            const nextComponentButton = document.querySelector('.components-wrapper .scroll-button.next');
+            initScrollButtons(componentsContainer, prevComponentButton, nextComponentButton, 800);
+
+            // Initialize team scroll
+            const teamContainer = document.querySelector('.team-grid');
+            const prevTeamButton = document.querySelector('.team-container .scroll-button.prev');
+            const nextTeamButton = document.querySelector('.team-container .scroll-button.next');
+            initScrollButtons(teamContainer, prevTeamButton, nextTeamButton, 300);
+        });
+    </script>
+</body>
+</html> 
